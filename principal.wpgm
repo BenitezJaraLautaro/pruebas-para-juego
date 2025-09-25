@@ -2,7 +2,7 @@ import wollok.game.*
 import prota.*
 
 
-program prubas {
+program prueba {
     game.title("prubas juego bar")
     game.height(50) 		
 	game.width(50) 			
