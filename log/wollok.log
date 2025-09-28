@@ -126,3 +126,5 @@
 {"exitCode":"SIGHUP","level":"info","message":"👾 Game executed principal.prueba on c:\\Users\\Admin\\Desktop\\OBJETOS1\\pruebas para juego\\pruebas-para-juego-2","timeElapsed":472685,"timestamp":"2025-09-28T02:52:43.435Z"}
 {"level":"info","message":"🚀 Program executed \u001b[3m\u001b[34mprincipal.prueba\u001b[39m\u001b[23m on \u001b[3m\u001b[34mc:\\Users\\Admin\\Desktop\\OBJETOS1\\pruebas para juego\\pruebas-para-juego-2\u001b[39m\u001b[23m","ok":true,"timeElapsed":276,"timestamp":"2025-09-28T02:52:44.786Z"}
 {"exitCode":"SIGHUP","level":"info","message":"👾 Game executed principal.prueba on c:\\Users\\Admin\\Desktop\\OBJETOS1\\pruebas para juego\\pruebas-para-juego-2","timeElapsed":137981,"timestamp":"2025-09-28T02:55:02.492Z"}
+{"level":"info","message":"🚀 Program executed \u001b[3m\u001b[34mprincipal.prueba\u001b[39m\u001b[23m on \u001b[3m\u001b[34mc:\\Users\\Admin\\Desktop\\OBJETOS1\\pruebas para juego\\pruebas-para-juego-2\u001b[39m\u001b[23m","ok":true,"timeElapsed":306,"timestamp":"2025-09-28T02:55:03.787Z"}
+{"level":"info","message":"⌛ Validating principal.wpgm","timeElapsed":101,"timestamp":"2025-09-28T02:55:19.891Z"}
