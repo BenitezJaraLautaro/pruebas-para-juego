@@ -1,15 +1,21 @@
 import wollok.game.*
 import prota.*
+import direcciones.*
 
 
 program prueba {
-    game.title("prubas juego bar")
-    game.height(50) 		
-	game.width(50) 			
-	game.cellSize(50)
-    game.boardGround("fondo2.jpg")	
-    game.addVisual(protagonista)
-    game.start()
-     		
+  game.title("prubas juego bar")
+  game.height(10)
+  game.width(10)
+  game.cellSize(50)
+  game.boardGround("fondo2.jpg")
+  game.addVisual(protagonista)
   
+  keyboard.up().onPressDo({ protagonista.mover(arriba) })
+  //bloque: ejecuta el comando dentro cuando se presiona la tecla
+  keyboard.down().onPressDo({ protagonista.mover(abajo) })
+  keyboard.right().onPressDo({ protagonista.mover(derecha) })
+  keyboard.left().onPressDo({ protagonista.mover(izquierda) })
+  
+  game.start()
 }
