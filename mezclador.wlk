@@ -23,7 +23,7 @@ object mezcladorBebidas {
         barte.ingredientes([])
         game.say(self, "!!PREPARASTE " + barte.bebidaActual().nombreBebida() + "¡¡")
       
-    }
+    }//tratar de usar "find"
 
     method bebidaConEstosIngredientes(ingre) {
         return bebibasDeMenu.filter({ bebida => bebida.ingredientesNecesarios() == ingre })
