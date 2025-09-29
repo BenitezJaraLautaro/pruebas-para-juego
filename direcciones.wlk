@@ -18,7 +18,7 @@ object abajo {
   } 
 
     method borde(posicion) {
-    return posicion.y() == 0
+    return posicion.y() == 1
   }
 
 

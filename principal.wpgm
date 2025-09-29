@@ -1,6 +1,10 @@
 import wollok.game.*
 import prota.*
 import direcciones.*
+import mezclador.*
+import ingredientes.*
+
+
 
 
 program prueba {
@@ -9,6 +13,9 @@ program prueba {
   game.width(10)
   game.cellSize(50)
   game.boardGround("fondo2.jpg")
+  game.addVisual(mezcladorBebidas)
+  game.addVisual(jugoDeLimon)
+  game.addVisual(azucar)
   game.addVisual(protagonista)
   
   keyboard.up().onPressDo({ protagonista.mover(arriba) })
@@ -16,6 +23,8 @@ program prueba {
   keyboard.down().onPressDo({ protagonista.mover(abajo) })
   keyboard.right().onPressDo({ protagonista.mover(derecha) })
   keyboard.left().onPressDo({ protagonista.mover(izquierda) })
+  keyboard.c().onPressDo({ protagonista.interactuarCon() })
+  keyboard.i().onPressDo({ protagonista.ingredientesQueTiene() })
   
   game.start()
 }
