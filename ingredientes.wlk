@@ -5,7 +5,7 @@ import bebidas.*
 
 object jugoDeLimon {
     var property position = game.at(0,3)
-    var property nombreIngre = "juegoDeLimon"
+    var property nombreIngre = "juego de Limon"
     method image() {
         return "muro.png"
       
@@ -14,6 +14,7 @@ object jugoDeLimon {
     method interaccion(barte) {
         barte.validadCapacidadIngre()
         barte.ingredientes().add(self)
+        game.say(barte, "agarraste jugo de limon")
       
     }
   
@@ -31,6 +32,7 @@ object azucar {
     method interaccion(barte) {
         barte.validadCapacidadIngre()
         barte.ingredientes().add(self)
+        game.say(barte, "agarraste azucar")
       
     }
   

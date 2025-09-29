@@ -30,6 +30,7 @@ object mezcladorBebidas {
     method validarBebida(bebidas) {
         if(bebidas.isEmpty()) {
             self.error("no existe una bebida con estos ingredientes")
+            barte.ingredientes([])
         }
       
     }
