@@ -25,6 +25,8 @@ program prueba {
   keyboard.left().onPressDo({ protagonista.mover(izquierda) })
   keyboard.c().onPressDo({ protagonista.interactuarCon() })
   keyboard.i().onPressDo({ protagonista.ingredientesQueTiene() })
+  keyboard.i().onPressDo({ protagonista.ingredientesQueTiene() })
+
   
   game.start()
 }

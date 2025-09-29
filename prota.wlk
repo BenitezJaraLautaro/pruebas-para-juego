@@ -8,6 +8,8 @@ object protagonista {
     var property bebidaActual = null
     var property ingredientes = []
     var property capacidadIngredientes = 4 
+    var property bebidasQuePuedeLlevar = 1
+
     var property orden = null
     var property position = game.at(0,1)
 
@@ -69,5 +71,12 @@ object protagonista {
         }
       
     }
+    method validarLibreDeBebidas() {
+        if (not (bebidaActual == null)) {
+            self.error("no puedo llevar mas de una bebida a la vez")
+        }
+      
+    }
+    
   
 }

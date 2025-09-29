@@ -23,5 +23,10 @@ object mojito {
         return ingredientesQuetiene
       
     }
+
+    method nombreBebida() {
+        return nombre
+      
+    }
   
 }

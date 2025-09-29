@@ -16,9 +16,12 @@ object mezcladorBebidas {
     }
 
     method prepararBebida(ingredientesDados) {
+        barte.validarLibreDeBebidas()
         const bebidaConIngre = self.bebidaConEstosIngredientes(ingredientesDados)
         self.validarBebida(bebidaConIngre)
         barte.agregarBebida(bebidaConIngre.get(0))
+        barte.ingredientes([])
+        game.say(self, "!!PREPARASTE " + barte.bebidaActual().nombreBebida() + "¡¡")
       
     }
 
@@ -32,6 +35,11 @@ object mezcladorBebidas {
             self.error("no existe una bebida con estos ingredientes")
             barte.ingredientes([])
         }
+      
+    }
+
+    method interaccion(bartender) {
+        self.prepararBebida(bartender.ingredientes())
       
     }
   
